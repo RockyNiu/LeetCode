@@ -37,24 +37,25 @@ public class PalindromeNumber {
 	
 	static boolean isPalindromeNumber(int num){
 		int last, first, i;
-		if (num >= 0) {}
+		if (num >= 0) {
+			while (num !=0){
+				last = num % 10;
+				first = num;
+				i = 1;
+				while (first > 9){
+					first = first / 10;
+					i = i*10 ;
+				}
+				if (last != first){
+					return false;
+				}
+				num = (num - first*i)/10;
+			}
+			return true;
+		}
 		else {
 			return false;
 		}
 		
-		while (num !=0){
-			last = num % 10;
-			first = num;
-			i = 1;
-			while (first > 9){
-				first = first / 10;
-				i = i*10 ;
-			}
-			if (last != first){
-				return false;
-			}
-			num = (num - first*i)/10;
-		}
-		return true;
 	}
 }
