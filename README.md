@@ -1,7 +1,7 @@
 # LeetCode
 ========
 
-# practice in LeetCode in java
+## practice in LeetCode in java
 
 	src/leetcode/java/PalindromeNumber.java
 	src/leetcode/java/AddTwoNumbers.java
@@ -35,5 +35,8 @@
 	src/leetcode/java/TwoSum.java
 	src/leetcode/java/ValidParentheses.java
 	src/leetcode/java/ZigZagConversion.java
-	src/leetcode/java/test.java
+	src/leetcode/java/Permutations.java
+	src/leetcode/java/PermutationsII.java
+	src/leetcode/java/SortColors.java
+
 

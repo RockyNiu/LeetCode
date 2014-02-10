@@ -10,3 +10,6 @@
 *.war
 *.ear
 
+# test file
+src/leetcode/java/test.java
+
