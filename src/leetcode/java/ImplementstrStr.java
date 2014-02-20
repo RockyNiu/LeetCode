@@ -1,14 +1,15 @@
 package leetcode.java;
+
+public class ImplementstrStr {
 /*
  * Implement strStr().
-＊ using Knuth-Morris-Pratt Algorithm
-* 
-* http://en.wikipedia.org/wiki/Knuth-morris-pratt
-* 
-Returns a pointer to the first occurrence of needle in haystack, 
-or null if needle is not part of haystack.
+ * using Knuth-Morris-Pratt Algorithm
+ * 
+ * http://en.wikipedia.org/wiki/Knuth-morris-pratt
+ * 
+ * Returns a pointer to the first occurrence of needle in haystack, 
+ * or null if needle is not part of haystack.
  */
-public class ImplementstrStr {
 	public static void main(String[] args) {
 		String S = "aaaaaab";
 		String W = "b";

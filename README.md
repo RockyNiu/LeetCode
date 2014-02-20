@@ -38,5 +38,5 @@
 	src/leetcode/java/Permutations.java
 	src/leetcode/java/PermutationsII.java
 	src/leetcode/java/SortColors.java
-
+	src/leetcode/java/NextPermutations.java
 

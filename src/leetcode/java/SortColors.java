@@ -15,12 +15,42 @@ public class SortColors {
  */
 	public static void main(String[] args) {
 		int[] A = new int[] { 1, 0, 2, 1, 0, 2, 2, 0, 1, 1 };
-		Solution075 solution = new Solution075();
+		Solution075_2 solution = new Solution075_2();
 		solution.sortColors(A);
 		for (int i = 0; i < A.length; i++) {
-			System.out.println(A[i]);
+			System.out.print(A[i]+" ");
 		}
 	}
+}
+
+// Albert Chen's solution
+class Solution075_2 {
+	public void sortColors(int[] A) {
+		int zeros = 0; // the end of zeros
+		int twos = A.length; // the start of twos;
+		int index = 0; // iterator
+
+		while (index < twos) {
+			if (A[index] == 0) {
+				swap(A, index, zeros);
+				index++;
+				zeros++;
+			} else if (A[index] == 1) {
+				index++;
+			} else {
+				twos--;
+				swap(A, index, twos);
+			}
+
+		}
+	}
+
+	void swap(int[] A, int n1, int n2) {
+		int temp = A[n1];
+		A[n1] = A[n2];
+		A[n2] = temp;
+	}
+
 }
 
 class Solution075 {

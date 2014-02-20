@@ -1,6 +1,7 @@
 package leetcode.java;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /*
  * Given a collection of numbers, return all possible permutations.
@@ -13,7 +14,7 @@ public class Permutations {
 
 	public static void main(String[] args) {
 		int[] num = new int[] { 1, 2, 3 };
-		Solution045 solution = new Solution045();
+		Solution045_2 solution = new Solution045_2();
 		ArrayList<ArrayList<Integer>> permutation = solution.permute(num);
 		for (int i = 0; i < permutation.size(); i++) {
 			System.out.print('[');
@@ -28,6 +29,59 @@ public class Permutations {
 
 	}
 
+}
+
+// Albert Chen's solution
+class Solution045_2 {
+	public ArrayList<ArrayList<Integer>> permute(int[] num) {
+		ArrayList<ArrayList<Integer>> permutations = new ArrayList<ArrayList<Integer>>();
+		if (num.length == 0)
+			return permutations;
+
+		Arrays.sort(num);
+		do {
+			ArrayList<Integer> unit = getList(num);
+			permutations.add(unit);
+		} while (nextPermutation(num));
+
+		return permutations;
+	}
+
+	boolean nextPermutation(int[] num) {
+		for (int i = num.length - 1; i > 0; i--) {
+			if (num[i - 1] < num[i]) {
+				for (int j = num.length - 1; j >= i; j--) {
+					if (num[i - 1] < num[j]) {
+						swap(num, i - 1, j);
+						reverse(num, i, num.length - 1);
+						return true;
+					}
+				}
+			}
+		}
+		reverse(num, 0, num.length - 1);
+		return false;
+	}
+
+	ArrayList<Integer> getList(int[] num) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		for (int i = 0; i < num.length; i++)
+			list.add(num[i]);
+		return list;
+	}
+
+	void swap(int[] num, int n1, int n2) {
+		int temp = num[n1];
+		num[n1] = num[n2];
+		num[n2] = temp;
+	}
+
+	void reverse(int[] num, int n1, int n2) {
+		for (int i = n1; i <= n1 + (n2 - n1) / 2; i++) {
+			swap(num, i, n2 + n1 - i);
+		}
+
+	}
 }
 
 class Solution045 {

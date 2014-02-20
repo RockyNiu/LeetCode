@@ -14,13 +14,39 @@ public class MergeSortedArray {
 		int m = 6;
 		int[] B = new int[] { 2, 4, 6 };
 		int n = 3;
-		Solution088 solution = new Solution088();
+		Solution088_2 solution = new Solution088_2();
 		solution.merge(A, m, B, n);
 		for (int i = 0; i < A.length; i++) {
-			System.out.println(A[i]);
+			System.out.print(A[i]+" ");
 		}
 	}
 
+}
+
+// Albert Chen's solution
+class Solution088_2 {
+	public void merge(int A[], int m, int B[], int n) {
+		int a = m - 1;
+		int b = n - 1;
+		int c = m + n - 1;
+
+		while (a >= 0 && b >= 0) {
+			if (A[a] > B[b]) {
+				A[c] = A[a];
+				a--;
+			} else {
+				A[c] = B[b];
+				b--;
+			}
+			c--;
+		}
+
+		while (b >= 0) {
+			A[b] = B[b];
+			b--;
+//			c--;
+		}
+	}
 }
 
 class Solution088 {
