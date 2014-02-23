@@ -43,7 +43,7 @@ public class ReverseNodesInKGroup {
 		
 		Solution024_2 solution = new Solution024_2();
 		ListNode newHead = solution.reverseKGroup(head,k);
-		newHead.present();
+		newHead.print();
 	}
 
 }

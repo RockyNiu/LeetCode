@@ -40,3 +40,4 @@
 	src/leetcode/java/SortColors.java
 	src/leetcode/java/NextPermutations.java
 	src/leetcode/java/MergeTwoSortedLists.java
+	src/leetcode/java/SortList.java

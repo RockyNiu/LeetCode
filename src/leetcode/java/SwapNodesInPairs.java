@@ -34,7 +34,7 @@ public class SwapNodesInPairs {
 		
 		Solution023 solution = new Solution023();
 		ListNode newHead = solution.swapPairs(head);
-		newHead.present();
+		newHead.print();
 	}
 
 }

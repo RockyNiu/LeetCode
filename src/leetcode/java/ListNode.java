@@ -9,7 +9,22 @@ public class ListNode {
 		next = null;
 	}
 	
-	void present(){
+	public static ListNode parse(int[] A){
+		if (A.length == 0) return null;
+		
+		ListNode head = new ListNode(A[0]);
+		if (A.length == 1) return head;
+		
+		ListNode pre = head;
+		for (int i = 1; i < A.length; i++) {
+			ListNode node = new ListNode(A[i]);
+			pre.next = node;
+			pre = pre.next;
+		}
+		return head;
+	}
+	
+	void print(){
 		ListNode head = this;
 		System.out.println();
 		while(head!=null){
@@ -18,5 +33,6 @@ public class ListNode {
 				System.out.print("->");
 			head = head.next;
 		}
+		System.out.println();
 	}
 }

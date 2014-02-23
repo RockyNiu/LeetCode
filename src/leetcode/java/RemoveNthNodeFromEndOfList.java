@@ -34,11 +34,11 @@ public class RemoveNthNodeFromEndOfList {
 			pre.next = node;
 			pre = node;
 		}
-		head.present();
+		head.print();
 		
 		Solution019 solution = new Solution019();
 		ListNode newHead = solution.removeNthFromEnd(head,2);
-		newHead.present();
+		newHead.print();
 	}
 		
 }

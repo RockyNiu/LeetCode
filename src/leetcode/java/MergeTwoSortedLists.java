@@ -41,7 +41,7 @@ public class MergeTwoSortedLists {
 		
 		Solution064 solution = new Solution064();
 		ListNode newHead = solution.mergeTwoLists(head1,head2);
-		newHead.present();
+		newHead.print();
 	}
 
 }
