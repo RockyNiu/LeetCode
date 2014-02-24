@@ -11,11 +11,9 @@ public class LinkedListCycleII {
 	public static void main(String[] args) {
 		int[] list = { 5, 2, 3, 7 };
 
-		ListNode c = new ListNode(0);
 		ListNode head = ListNode.parse(list);
 
-		c.next = head.next;
-		head.next.next.next = c;
+		head.next.next.next.next = head.next;
 
 		Solution142 solution = new Solution142();
 		System.out.println(solution.detectCycle(head).val);
@@ -42,7 +40,8 @@ class Solution142 {
 
 		ListNode slow = head;
 		ListNode fast = head;
-
+		ListNode pre = head;
+		
 		while(true){
 			slow = slow.next;
 			if (fast.next == null)
@@ -50,11 +49,22 @@ class Solution142 {
 			else
 				fast = fast.next.next;
 			
-			if (slow.equals(fast))
-				return slow;
-			
 			if ((slow == null) || (fast == null))
 				return null;
+			
+			if (slow.equals(fast)){
+				while (pre != slow) {
+					slow = slow.next;
+					while ((slow != pre) && (slow != fast)) {
+						slow = slow.next;
+					}
+					if (slow == pre)
+						break;
+					else
+						pre = pre.next;
+				}
+				return slow;
+			}
 		}
 	}
 }

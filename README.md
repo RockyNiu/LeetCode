@@ -41,3 +41,5 @@
 	src/leetcode/java/NextPermutations.java
 	src/leetcode/java/MergeTwoSortedLists.java
 	src/leetcode/java/SortList.java
+	src/leetcode/java/LinkedListCycle.java
+	src/leetcode/java/LinkedListCycleII.java
