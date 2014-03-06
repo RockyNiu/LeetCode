@@ -34,7 +34,8 @@ class Solution148 {
 		if (head == null || head.next == null)
 			return head;
 
-		ListNode half = splitList(head);
+//		ListNode half = splitList(head);
+		ListNode half = partion(head);
 		
 		head = sortList(head);
 		half = sortList(half);
@@ -42,6 +43,25 @@ class Solution148 {
 		head = mergeSortedList(head, half);
 
 		return head;
+	}
+	
+	// Albert Chen's solution
+	private ListNode partion(ListNode head){
+		ListNode slow = head;
+		ListNode fast = head;
+		while(true){
+			fast = fast.next;
+			if (fast == null)
+				break;
+			fast = fast.next;
+			if (fast == null)
+				break;
+			slow = slow.next;			
+		}
+		ListNode half = slow.next;
+		slow.next = null;		
+		return half;
+		
 	}
 
 	private ListNode splitList(ListNode head) {

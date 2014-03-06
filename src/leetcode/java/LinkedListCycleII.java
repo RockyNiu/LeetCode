@@ -15,7 +15,7 @@ public class LinkedListCycleII {
 
 		head.next.next.next.next = head.next;
 
-		Solution142 solution = new Solution142();
+		Solution142_2 solution = new Solution142_2();
 		System.out.println(solution.detectCycle(head).val);
 	}
 
@@ -32,6 +32,56 @@ public class LinkedListCycleII {
  *     }
  * }
  */
+
+// Jimmy Cloud's Solution
+class Solution142_2 {
+	public ListNode detectCycle(ListNode head) {
+		
+		if (head == null || head.next == null)
+			return null;
+
+		ListNode slow = head;
+		ListNode fast = head;
+		ListNode pre = head;
+		
+		while(true){
+			slow = slow.next;
+			if (fast.next == null)
+				return null;
+			else
+				fast = fast.next.next;
+			
+			if ((slow == null) || (fast == null))
+				return null;
+			
+			if (slow.equals(fast)){
+				
+				// find the size of cycle sizeOfCycle
+				int sizeOfCycle = 0;
+				do {
+					slow = slow.next;
+					sizeOfCycle++;
+				} while (slow != fast);
+
+				// pre runs sizeOfCycle first
+				pre = head;
+				for (int i = 0; i < sizeOfCycle; i++) {
+					pre = pre.next;
+				}
+				
+				// slow runs distanceToCycleStartingPoint, pre runs sizeOfCycle + distanceToCycleStartingPoint
+				slow = head;
+				while (!slow.equals(pre)){
+					pre = pre.next;
+					slow = slow.next;
+				}
+				return slow;
+			}
+		}
+	}
+}
+
+
 class Solution142 {
 	public ListNode detectCycle(ListNode head) {
 		
