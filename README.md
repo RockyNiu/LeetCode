@@ -44,3 +44,4 @@
 	src/leetcode/java/LinkedListCycle.java
 	src/leetcode/java/LinkedListCycleII.java
 	src/leetcode/java/CopyListwithRandomPointer.java
+	src/leetcode/java/MinimumDepthOfBinaryTree.java
