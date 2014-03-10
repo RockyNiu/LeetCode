@@ -50,3 +50,4 @@
 	src/leetcode/java/BinaryTreeLevelOrderTraversal.java
 	src/leetcode/java/ConstructBinaryTreeFromPreorderAndInorderTraversal.java
 	src/leetcode/java/BinaryTreeMaximumPathSum.java
+	src/leetcode/java/UniqueBinarySearchTrees.java
