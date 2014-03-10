@@ -48,3 +48,4 @@
 	src/leetcode/java/SymmetricTree.java
 	src/leetcode/java/ValidateBinarySearchTree.java
 	src/leetcode/java/BinaryTreeLevelOrderTraversal.java
+	src/leetcode/java/ConstructBinaryTreeFromPreorderAndInorderTraversal.java

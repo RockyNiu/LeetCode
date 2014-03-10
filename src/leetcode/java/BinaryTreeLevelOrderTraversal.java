@@ -40,7 +40,7 @@ return its level order traversal as:
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution107 {
+class Solution102 {
     public ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
     	ArrayList<ArrayList<Integer>> order = new ArrayList<ArrayList<Integer>>();
     	if (root == null)
