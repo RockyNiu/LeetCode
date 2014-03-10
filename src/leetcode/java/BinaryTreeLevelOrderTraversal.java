@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import sun.org.mozilla.javascript.internal.ast.ForLoop;
-
 public class BinaryTreeLevelOrderTraversal {
 
 	/**
