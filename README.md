@@ -45,3 +45,4 @@
 	src/leetcode/java/LinkedListCycleII.java
 	src/leetcode/java/CopyListwithRandomPointer.java
 	src/leetcode/java/MinimumDepthOfBinaryTree.java
+	src/leetcode/java/SymmetricTree.java
