@@ -46,3 +46,4 @@
 	src/leetcode/java/CopyListwithRandomPointer.java
 	src/leetcode/java/MinimumDepthOfBinaryTree.java
 	src/leetcode/java/SymmetricTree.java
+	src/leetcode/java/ValidateBinarySearchTree.java
