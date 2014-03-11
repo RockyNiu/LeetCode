@@ -51,3 +51,4 @@
 	src/leetcode/java/ConstructBinaryTreeFromPreorderAndInorderTraversal.java
 	src/leetcode/java/BinaryTreeMaximumPathSum.java
 	src/leetcode/java/UniqueBinarySearchTrees.java
+	src/leetcode/java/RecoverBinarySearchTree.java *****
