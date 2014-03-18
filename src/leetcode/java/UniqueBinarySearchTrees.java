@@ -30,7 +30,7 @@ class Solution095 {
     }
 
 	int numTrees(int start, int end){
-		if (start > end)
+		if (start >= end)
 			return 1;
 		
 		int num = 0;
