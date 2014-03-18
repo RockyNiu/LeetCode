@@ -48,26 +48,26 @@ class Solution102 {
     	
     	Queue<TreeNode> queue = new LinkedList<TreeNode>();
     	queue.offer(root);
-    	int topLevelCount = 0;
-    	int currentLevelCount = 1;
+    	int currentLevelCount = 0;
+    	int nextLevelCount = 1;
     	
     	while (queue.size() > 0){
     		ArrayList<Integer> level = new ArrayList<Integer>();
-    		topLevelCount = currentLevelCount;
-    		currentLevelCount = 0;
-    		for (int i = 0; i < topLevelCount; i++) {
+    		currentLevelCount = nextLevelCount;
+    		nextLevelCount = 0;
+    		for (int i = 0; i < currentLevelCount; i++) {
 				
     			TreeNode node = queue.poll();
 				level.add(node.val);
 				
 				if (node.left != null){
 					queue.offer(node.left);
-					currentLevelCount++;
+					nextLevelCount++;
 				}
 				
 				if (node.right != null){
 					queue.offer(node.right);
-					currentLevelCount++;
+					nextLevelCount++;
 				}
     			
     		}
