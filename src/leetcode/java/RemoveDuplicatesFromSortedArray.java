@@ -13,13 +13,13 @@ Your function should return length = 2, and A is now [1,2].
 public class RemoveDuplicatesFromSortedArray {
 	public static void main(String[] args) {
 		int[] A = {1,2,2,3};
-		Solution025 solution = new Solution025();
+		Solution054 solution = new Solution054();
 		System.out.println(solution.removeDuplicates(A));
 	}
 
 }
 
-class Solution025{
+class Solution054{
     public int removeDuplicates(int[] A) {
     	if (A.length == 0) return 0;
     	int n = 0;
