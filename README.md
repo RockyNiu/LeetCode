@@ -61,3 +61,4 @@
 	src/leetcode/java/BestTimeToBuyAndSellStock.java
 	src/leetcode/java/BestTimeToBuyAndSellStockII.java
 	src/leetcode/java/BestTimeToBuyAndSellStockIII.java
+	src/leetcode/java/LargestRectangleInHistogram.java
