@@ -53,3 +53,7 @@
 	src/leetcode/java/UniqueBinarySearchTrees.java
 	src/leetcode/java/RecoverBinarySearchTree.java *****
 	src/leetcode/java/SameTree.java
+	src/leetcode/java/JumpGame.java
+	src/leetcode/java/ClimbingStairs.java
+	src/leetcode/java/UniquePaths.java
+	src/leetcode/java/LongestValidParentheses.java

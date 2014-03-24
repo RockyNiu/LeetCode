@@ -65,9 +65,10 @@ class Solution099 {
     			// make current is the right child of its inorder predecessor
     			if (pre.right == null){
     				pre.right = current;
-    				current = current.right;   				
+    				current = current.left;   				
     			}
     			else{
+    				pre.right = null;
     				// found mistakes
             		if (parent!=null && parent.val > current.val){
             			if (!found){
