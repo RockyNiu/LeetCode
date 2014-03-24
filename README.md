@@ -52,3 +52,4 @@
 	src/leetcode/java/BinaryTreeMaximumPathSum.java
 	src/leetcode/java/UniqueBinarySearchTrees.java
 	src/leetcode/java/RecoverBinarySearchTree.java *****
+	src/leetcode/java/JumpGame.java
