@@ -9,6 +9,9 @@ public class test {
 		if ((int)1==(float)1)
 			System.out.println(""+ 3/-2);
 
+		String name = "ab.com";
+		String[] splitName = name.split("@");
+		System.out.println(splitName[0]);
 	}
 
 }

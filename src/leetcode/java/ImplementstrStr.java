@@ -13,10 +13,78 @@ public class ImplementstrStr {
 	public static void main(String[] args) {
 		String S = "aaaaaab";
 		String W = "b";
-		Solution027_2 solution = new Solution027_2();
+		Solution027_3 solution = new Solution027_3();
 		System.out.println(solution.strStr(S,W));
 	}
 
+}
+
+// 20140404
+class Solution027_3{
+	public String strStr(String haystack, String needle) {
+        if (needle.length()==0)
+            return haystack;
+        if (haystack.length()==0)
+            return null;
+        
+        int m = 0; // pos in haystack
+        int i = 0; // pos in needle
+        int[] T = kmpTable(needle);
+        
+        while (m+i < haystack.length()){
+            if (needle.charAt(i) == haystack.charAt(m+i)){
+                if (i == needle.length()-1){
+                    return haystack.substring(m);
+                }
+                else {
+                    i++;
+                }
+            }
+            else{
+                m = m + i - T[i];
+                if (T[i] > -1){
+                    i = T[i];
+                }
+                else {
+                    i = 0;
+                }
+                
+            }
+        }
+        return null;
+	}  
+    int[] kmpTable(String needle1){
+        int len = needle1.length();
+        if (len == 0)
+            return null;
+        if (len == 1){
+            int[] T = new int[len];
+            T[0] = -1;
+            return T;
+        }
+        
+        int[] T = new int[len];
+        T[0] = -1;
+        T[1] = 0;
+        
+        int pos = 2; // position in needle
+        int cnd = 0; // candidate
+        while(pos < len){
+            if (needle1.charAt(pos-1)==needle1.charAt(cnd)){ //start from 
+                cnd++;
+                T[pos] = cnd;
+                pos++;
+            }
+            else if (cnd > 0){
+                cnd = T[cnd];
+            }
+            else{ // cnd == 0
+                T[pos] = 0;
+                pos ++;
+            }
+        }
+        return T;
+    }
 }
 
 class Solution027_2{
@@ -52,8 +120,8 @@ class Solution027{
 		if (haystack.isEmpty())
 			return null;
 		
-		int m = 0; // the beginning of the current match in S
-        int i = 0; // the position of the current character in W
+		int m = 0; // the beginning of the current match in haystack
+        int i = 0; // the position of the current character in needle
         int[] T = kmpTable(needle);
         
         while (m+i<haystack.length()){
@@ -64,7 +132,7 @@ class Solution027{
         			i++;
         	}
     		else{
-    			m = m+i-T[i];
+    			m = m+i-T[i]; // it is good to set T[0] = -1;
     			if (T[i]>-1)
     				i = T[i];
     			else
@@ -99,7 +167,7 @@ class Solution027{
 			else if (cnd > 0){
 				cnd = T[cnd];
 			}
-			else{
+			else{ // cnd == 0
 				T[pos] = 0;
 				pos++;
 			}
