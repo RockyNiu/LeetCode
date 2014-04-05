@@ -64,3 +64,5 @@
 	src/leetcode/java/LargestRectangleInHistogram.java
 	src/leetcode/java/MinimumWindowSubstring.java
 	src/leetcode/java/ValidPalindrome.java
+	src/leetcode/java/Anagrams.java
+	
