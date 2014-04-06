@@ -65,4 +65,4 @@
 	src/leetcode/java/MinimumWindowSubstring.java
 	src/leetcode/java/ValidPalindrome.java
 	src/leetcode/java/Anagrams.java
-	
+	src/leetcode/java/WordSearch.java
