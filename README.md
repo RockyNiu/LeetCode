@@ -66,3 +66,5 @@
 	src/leetcode/java/ValidPalindrome.java
 	src/leetcode/java/Anagrams.java
 	src/leetcode/java/WordSearch.java
+	src/leetcode/java/EditDistance.java
+	Src/leetcode/java/WordBreak.java
