@@ -51,7 +51,6 @@ class Solution079{
 		// find the first position
 		for (int i = 0; i < Y; i++) {
 			for (int j = 0; j < X; j++) {
-				char c = board[i][j];
 				if (board[i][j] == word.charAt(0)){
 					first.push(new int[]{i,j,0});
 				}

@@ -8,11 +8,43 @@ public class LongestPalindrome {
 
 	public static void main(String[] args) {
 		String s = "bb";
-		Solution005 solution = new Solution005();
+		Solution005_2 solution = new Solution005_2();
 		String longest = solution.longestPalindrome(s);
 		System.out.println(longest);
 	}
 
+}
+
+// 20140409
+class Solution005_2{
+	String longestPalindrome (String s){
+		int len = s.length();
+		if (len == 0 || len == 1){
+			return s;
+		}
+		
+		String longest = s.substring(0);
+		for (int i = 0; i < len; i++) {
+			String s1 = expandCenter(s,i,i);
+			if (s1.length() > longest.length()){
+				longest = s1;
+			}
+			
+			String s2 = expandCenter(s,i,i+1);
+			if (s1.length() > longest.length()){
+				longest = s2;
+			}
+		}
+		return longest;
+	}
+	
+	String expandCenter(String s, int left, int right){
+		while (left>=0 && right<=s.length()-1 && s.charAt(left)==s.charAt(right)){
+			left--;
+			right++;
+		}
+		return s.substring(left+1,right);
+	}
 }
 
 class Solution005 {
