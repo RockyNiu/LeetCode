@@ -3,7 +3,7 @@
 
 ## practice in LeetCode in java
 
-	[/src/leetcode/java/PalindromeNumber.java](/src/leetcode/java/PalindromeNumber.java)
+	[PalindromeNumber](/src/leetcode/java/PalindromeNumber.java)
 	[/src/leetcode/java/AddTwoNumbers.java]
 	[/src/leetcode/java/ContainerWithMostWater.java]
 	[/src/leetcode/java/DivideTwoIntegers.java]
