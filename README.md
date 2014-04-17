@@ -3,8 +3,8 @@
 
 ## practice in LeetCode in java
 
-	src/leetcode/java/PalindromeNumber.java
-	src/leetcode/java/AddTwoNumbers.java
+	[src/leetcode/java/PalindromeNumber.java](https://github.com/RockyNiu/LeetCode/blob/master/src/leetcode/java/PalindromeNumber.java)
+	[src/leetcode/java/AddTwoNumbers.java](https://github.com/RockyNiu/LeetCode/blob/master/src/leetcode/java/AddTwoNumbers.java)
 	src/leetcode/java/ContainerWithMostWater.java
 	src/leetcode/java/DivideTwoIntegers.java
 	src/leetcode/java/FindMedianSortedArrays.java
