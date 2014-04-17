@@ -3,68 +3,68 @@
 
 ## practice in LeetCode in java
 
-	[PalindromeNumber](/src/leetcode/java/PalindromeNumber.java)
-	[/src/leetcode/java/AddTwoNumbers.java]
-	[/src/leetcode/java/ContainerWithMostWater.java]
-	[/src/leetcode/java/DivideTwoIntegers.java]
-	[/src/leetcode/java/FindMedianSortedArrays.java]
-	[/src/leetcode/java/FourSum.java]
-	[/src/leetcode/java/GenerateParentheses.java]
-	[/src/leetcode/java/ImplementstrStr.java]
-	[/src/leetcode/java/Integer2Roman.java]
-	[/src/leetcode/java/LengthOfLongestSubstring.java]
-	[/src/leetcode/java/LetterCombinationsofPhoneNumbers.java]
-	[/src/leetcode/java/ListNode.java]
-	[/src/leetcode/java/LongestCommonPrefix.java]
-	[/src/leetcode/java/LongestPalindrome.java]
-	[/src/leetcode/java/MergeKSortedLists.java]
-	[/src/leetcode/java/MergeSortedArray.java]
-	[/src/leetcode/java/RegularExpressionMatching.java]
-	[/src/leetcode/java/RemoveDuplicatesFromSortedArray.java]
-	[/src/leetcode/java/RemoveElement.java]
-	[/src/leetcode/java/RemoveNthNodeFromEndOfList.java]
-	[/src/leetcode/java/ReverseInteger.java]
-	[/src/leetcode/java/ReverseNodesInKGroup.java]
-	[/src/leetcode/java/Roman2Integer.java]
-	[/src/leetcode/java/SingleNumber.java]
-	[/src/leetcode/java/SingleNumberII.java]
-	[/src/leetcode/java/String2Integer.java]
-	[/src/leetcode/java/SwapNodesInPairs.java]
-	[/src/leetcode/java/ThreeSum.java]
-	[/src/leetcode/java/ThreeSumClosest.java]
-	[/src/leetcode/java/TwoSum.java]
-	[/src/leetcode/java/ValidParentheses.java]
-	[/src/leetcode/java/ZigZagConversion.java]
-	[/src/leetcode/java/Permutations.java]
-	[/src/leetcode/java/PermutationsII.java]
-	[/src/leetcode/java/SortColors.java]
-	[/src/leetcode/java/NextPermutations.java]
-	[/src/leetcode/java/MergeTwoSortedLists.java]
-	[/src/leetcode/java/SortList.java]
-	[/src/leetcode/java/LinkedListCycle.java]
-	[/src/leetcode/java/LinkedListCycleII.java]
-	[/src/leetcode/java/CopyListwithRandomPointer.java]
-	[/src/leetcode/java/MinimumDepthOfBinaryTree.java]
-	[/src/leetcode/java/SymmetricTree.java]
-	[/src/leetcode/java/ValidateBinarySearchTree.java]
-	[/src/leetcode/java/BinaryTreeLevelOrderTraversal.java]
-	[/src/leetcode/java/ConstructBinaryTreeFromPreorderAndInorderTraversal.java]
-	[/src/leetcode/java/BinaryTreeMaximumPathSum.java]
-	[/src/leetcode/java/UniqueBinarySearchTrees.java]
-	[/src/leetcode/java/RecoverBinarySearchTree.java] *****
-	[/src/leetcode/java/SameTree.java]
-	[/src/leetcode/java/JumpGame.java]
-	[/src/leetcode/java/ClimbingStairs.java]
-	[/src/leetcode/java/UniquePaths.java]
-	[/src/leetcode/java/LongestValidParentheses.java]
-	[/src/leetcode/java/JumpGameII.java]
-	[/src/leetcode/java/BestTimeToBuyAndSellStock.java]
-	[/src/leetcode/java/BestTimeToBuyAndSellStockII.java]
-	[/src/leetcode/java/BestTimeToBuyAndSellStockIII.java]
-	[/src/leetcode/java/LargestRectangleInHistogram.java]
-	[/src/leetcode/java/MinimumWindowSubstring.java]
-	[/src/leetcode/java/ValidPalindrome.java]
-	[/src/leetcode/java/Anagrams.java]
-	[/src/leetcode/java/WordSearch.java]
-	[/src/leetcode/java/EditDistance.java]
-	[/src/leetcode/java/WordBreak.java]
+[PalindromeNumber](/src/leetcode/java/PalindromeNumber.java)<br/>
+[AddTwoNumbers](/src/leetcode/java/AddTwoNumbers.java)<br/>
+[ContainerWithMostWater](/src/leetcode/java/ContainerWithMostWater.java)<br/>
+[DivideTwoIntegers](/src/leetcode/java/DivideTwoIntegers.java)<br/>
+[FindMedianSortedArrays](/src/leetcode/java/FindMedianSortedArrays.java)<br/>
+[FourSum](/src/leetcode/java/FourSum.java)<br/>
+[GenerateParentheses](/src/leetcode/java/GenerateParentheses.java)<br/>
+[ImplementstrStr](/src/leetcode/java/ImplementstrStr.java)<br/>
+[Integer2Roman](/src/leetcode/java/Integer2Roman.java)<br/>
+[LengthOfLongestSubstring](/src/leetcode/java/LengthOfLongestSubstring.java)<br/>
+[LetterCombinationsofPhoneNumbers](/src/leetcode/java/LetterCombinationsofPhoneNumbers.java)<br/>
+[ListNode](/src/leetcode/java/ListNode.java)<br/>
+[LongestCommonPrefix](/src/leetcode/java/LongestCommonPrefix.java)<br/>
+[LongestPalindrome](/src/leetcode/java/LongestPalindrome.java)<br/>
+[MergeKSortedLists](/src/leetcode/java/MergeKSortedLists.java)<br/>
+[MergeSortedArray](/src/leetcode/java/MergeSortedArray.java)<br/>
+[RegularExpressionMatching](/src/leetcode/java/RegularExpressionMatching.java)<br/>
+[RemoveDuplicatesFromSortedArray](/src/leetcode/java/RemoveDuplicatesFromSortedArray.java)<br/>
+[RemoveElement](/src/leetcode/java/RemoveElement.java)<br/>
+[RemoveNthNodeFromEndOfList](/src/leetcode/java/RemoveNthNodeFromEndOfList.java)<br/>
+[ReverseInteger](/src/leetcode/java/ReverseInteger.java)<br/>
+[ReverseNodesInKGroup](/src/leetcode/java/ReverseNodesInKGroup.java)<br/>
+[Roman2Integer](/src/leetcode/java/Roman2Integer.java)<br/>
+[SingleNumber](/src/leetcode/java/SingleNumber.java)<br/>
+[SingleNumberII](/src/leetcode/java/SingleNumberII.java)<br/>
+[String2Integer](/src/leetcode/java/String2Integer.java)<br/>
+[SwapNodesInPairs](/src/leetcode/java/SwapNodesInPairs.java)<br/>
+[ThreeSum](/src/leetcode/java/ThreeSum.java)<br/>
+[ThreeSumClosest](/src/leetcode/java/ThreeSumClosest.java)<br/>
+[TwoSum](/src/leetcode/java/TwoSum.java)<br/>
+[ValidParentheses](/src/leetcode/java/ValidParentheses.java)<br/>
+[ZigZagConversion](/src/leetcode/java/ZigZagConversion.java)<br/>
+[Permutations](/src/leetcode/java/Permutations.java)<br/>
+[PermutationsII](/src/leetcode/java/PermutationsII.java)<br/>
+[SortColors](/src/leetcode/java/SortColors.java)<br/>
+[NextPermutations](/src/leetcode/java/NextPermutations.java)<br/>
+[MergeTwoSortedLists](/src/leetcode/java/MergeTwoSortedLists.java)<br/>
+[SortList](/src/leetcode/java/SortList.java)<br/>
+[LinkedListCycle](/src/leetcode/java/LinkedListCycle.java)<br/>
+[LinkedListCycleII](/src/leetcode/java/LinkedListCycleII.java)<br/>
+[CopyListwithRandomPointer](/src/leetcode/java/CopyListwithRandomPointer.java)<br/>
+[MinimumDepthOfBinaryTree](/src/leetcode/java/MinimumDepthOfBinaryTree.java)<br/>
+[SymmetricTree](/src/leetcode/java/SymmetricTree.java)<br/>
+[ValidateBinarySearchTree](/src/leetcode/java/ValidateBinarySearchTree.java)<br/>
+[BinaryTreeLevelOrderTraversal](/src/leetcode/java/BinaryTreeLevelOrderTraversal.java)<br/>
+[ConstructBinaryTreeFromPreorderAndInorderTraversal](/src/leetcode/java/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)<br/>
+[BinaryTreeMaximumPathSum](/src/leetcode/java/BinaryTreeMaximumPathSum.java)<br/>
+[UniqueBinarySearchTrees](/src/leetcode/java/UniqueBinarySearchTrees.java)<br/>
+[RecoverBinarySearchTree](/src/leetcode/java/RecoverBinarySearchTree.java)<br/> *****
+[SameTree](/src/leetcode/java/SameTree.java)<br/>
+[JumpGame](/src/leetcode/java/JumpGame.java)<br/>
+[ClimbingStairs](/src/leetcode/java/ClimbingStairs.java)<br/>
+[UniquePaths](/src/leetcode/java/UniquePaths.java)<br/>
+[LongestValidParentheses](/src/leetcode/java/LongestValidParentheses.java)<br/>
+[JumpGameII](/src/leetcode/java/JumpGameII.java)<br/>
+[BestTimeToBuyAndSellStock](/src/leetcode/java/BestTimeToBuyAndSellStock.java)<br/>
+[BestTimeToBuyAndSellStockII](/src/leetcode/java/BestTimeToBuyAndSellStockII.java)<br/>
+[BestTimeToBuyAndSellStockIII](/src/leetcode/java/BestTimeToBuyAndSellStockIII.java)<br/>
+[LargestRectangleInHistogram](/src/leetcode/java/LargestRectangleInHistogram.java)<br/>
+[MinimumWindowSubstring](/src/leetcode/java/MinimumWindowSubstring.java)<br/>
+[ValidPalindrome](/src/leetcode/java/ValidPalindrome.java)<br/>
+[Anagrams](/src/leetcode/java/Anagrams.java)<br/>
+[WordSearch](/src/leetcode/java/WordSearch.java)<br/>
+[EditDistance](/src/leetcode/java/EditDistance.java)<br/>
+[WordBreak](/src/leetcode/java/WordBreak.java)<br/>
