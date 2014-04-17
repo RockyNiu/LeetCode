@@ -51,7 +51,7 @@
 [ConstructBinaryTreeFromPreorderAndInorderTraversal](/src/leetcode/java/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)<br/>
 [BinaryTreeMaximumPathSum](/src/leetcode/java/BinaryTreeMaximumPathSum.java)<br/>
 [UniqueBinarySearchTrees](/src/leetcode/java/UniqueBinarySearchTrees.java)<br/>
-[RecoverBinarySearchTree](/src/leetcode/java/RecoverBinarySearchTree.java)<br/> *****
+[RecoverBinarySearchTree](/src/leetcode/java/RecoverBinarySearchTree.java)*****<br/> 
 [SameTree](/src/leetcode/java/SameTree.java)<br/>
 [JumpGame](/src/leetcode/java/JumpGame.java)<br/>
 [ClimbingStairs](/src/leetcode/java/ClimbingStairs.java)<br/>
