@@ -68,3 +68,4 @@
 [WordSearch](/src/leetcode/java/WordSearch.java)<br/>
 [EditDistance](/src/leetcode/java/EditDistance.java)<br/>
 [WordBreak](/src/leetcode/java/WordBreak.java)<br/>
+[PlusOne](/src/leetcode/java/PlusOne.java)<br/>
