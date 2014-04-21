@@ -17,6 +17,11 @@ public class Sqrt {
 	}
 }
 
+//位运算
+class Solution069_1{
+	
+}
+
 class Solution069 {
 	public int sqrt(int x) {
 		assert (x >= 0) : "x < 0!!";
