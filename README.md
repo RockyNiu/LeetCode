@@ -1,7 +1,6 @@
 # LeetCode
-========
 
-## practice in LeetCode in java
+## practice in java
 
 [PalindromeNumber](/src/leetcode/java/PalindromeNumber.java)<br/>
 [AddTwoNumbers](/src/leetcode/java/AddTwoNumbers.java)<br/>
@@ -73,7 +72,7 @@
 [CountAndSay](/src/leetcode/java/CountAndSay.java)<br/>
 [GrayCode](/src/leetcode/java/GrayCode.java)<br/>
 
-### License and Author
+## License and Author
 * Author::[RockyNiu](https://github.com/RockyNiu)
   
   Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
