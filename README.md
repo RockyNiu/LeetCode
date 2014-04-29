@@ -71,6 +71,7 @@
 [Sqrt](/src/leetcode/java/Sqrt.java)<br/>
 [CountAndSay](/src/leetcode/java/CountAndSay.java)<br/>
 [GrayCode](/src/leetcode/java/GrayCode.java)<br/>
+[EvaluateReversePolishNotation](/src/leetcode/java/EvaluateReversePolishNotation.java)<br/>
 
 ## License and Author
 * Author::[RockyNiu](https://github.com/RockyNiu)
