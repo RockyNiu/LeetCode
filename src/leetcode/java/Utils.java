@@ -45,11 +45,15 @@ public class Utils {
 		System.out.println();
 	}
 
-	public static void print(List A){
+	public static void print(List A, String mode){
 		for (int i = 0; i < A.size(); i++) {
-			System.out.print(A.get(i)+"\t");
+			System.out.print(A.get(i)+mode);
 		}
 		System.out.println();
+	}
+	
+	public static void print(List A){
+		print(A, "\t");
 	}
 
 	public static int[] convertArrayListToArray(ArrayList<Integer> array){
