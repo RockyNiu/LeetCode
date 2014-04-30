@@ -30,70 +30,34 @@ class Solution135 {
 		if (len == 0 || len == 1)
 			return len;
 		
-		int result = 0;
+		int[] dp = new int[len];
 		
-		// index for start and end
-		int start = 0;
-		int end = 1;
-		int flag = 0; // increased 1 or decreased -1 or equal 0
-		int highest = 0;
-		
-		int index = 0;
-		if (ratings[1] == ratings[0]){
-			flag = 0;
-		} else if (ratings[1] > ratings[0]){
-			flag = 1;
-		} else {
-			flag = -1;
+		// increasing
+		int k = 1;
+		for (int i = 0; i < len; i++) {
+			if (i > 0 && ratings[i] > ratings[i-1]){
+				dp[i] = Math.max(k++, dp[i]);
+			}else {
+				k = 1;
+			}
 		}
 		
-		print(start, end, index, flag, highest, result);
-		
-		while (index < len - 1){
-			if (ratings[index+1] == ratings[index]){
-				flag = 0;
-				result = result + cal(end - start);
-				start = index;
-				end = index+1;
-				highest = 1;
-			} else if (ratings[index+1] > ratings[index]){
-				if (flag == 1){
-					end++;
-				} else {
-					result = result + cal(end - start) - highest;
-					highest = 1;
-					start = index;
-					end = index+1;
-					flag = 1;
-				}
-			} else {
-				if (flag == -1){
-					end++;
-				} else {
-					result = result + cal(end - start) - highest;
-					highest = end - start;
-					start = index;
-					end = index+1;
-					flag = -1;
-
-				}
+		// decreasing
+		k = 1;
+		for (int i = len - 1; i >=0; i--) {
+			if (i < len - 1 && ratings[i] > ratings[i+1]){
+				dp[i] = Math.max(k++, dp[i]);
+			}else {
+				k = 1;
 			}
-			print(start, end, index, flag, highest, result);
-			index++;
-		}		
-		return result + cal(end - start + 1);
+		}
+		
+		int result = len;
+		for (int i = 0; i < dp.length; i++) {
+			result += dp[i];
+		}
+		
+		return result;
 	}
 
-	private int cal(int n) {
-		return (n + 1) * n / 2;
-	}
-
-	void print(int start, int end, int index, int flag, int highest, int result){
-		System.out.print("\tstart:\t" + start);
-		System.out.print("\tend:\t" + end);
-		System.out.print("\tindex:\t" + end);
-		System.out.print("\tflag:\t" + flag);
-		System.out.print("\thighest:\t" + highest);
-		System.out.print("\tresult:\t" + result + "\n");
-	}
 }
