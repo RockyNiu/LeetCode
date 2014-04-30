@@ -1,6 +1,5 @@
 package leetcode.java;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class LRUCache {
@@ -25,38 +24,97 @@ public class LRUCache {
 
 class Solution146 {
 	int capacity;
-	HashMap<Integer, Integer> map;
-	ArrayList<Integer> list;
+	int len;
+	HashMap<Integer, DoubleLinkedNode> map;
+	DoubleLinkedNode head;
+	DoubleLinkedNode end;
 	
 	public Solution146(int capacity) {
 		this.capacity = capacity;
-		this.map = new HashMap<Integer, Integer>();
-		this.list = new ArrayList<Integer>();
+		this.len = 0;
+		this.map = new HashMap<Integer, DoubleLinkedNode>();
     }
     
 	public int get(int key) {
 		if (map.get(key) == null)
 			return -1;
 		else {
-			int value = map.get(key);
-			int first = list.get(0);
-			list.set(0, value);
-			list.set(key, first);
-			return value;
+			DoubleLinkedNode visit = map.get(key);
+			removeNode(visit);
+			setHead(visit);
+			return visit.value;
 		}
 	}
 
 	public void set(int key, int value) {
 		if (map.containsKey(key)) {
-			map.put(key, value);
-		} else if (this.capacity > map.size()) {
-			map.put(key, value);
-			list.add(0, key);
+			DoubleLinkedNode oldNode = map.get(key);
+			oldNode.value = value;
+			removeNode(oldNode);
+			setHead(oldNode);
+		} else if (this.len < this.capacity) {
+			DoubleLinkedNode newNode = new DoubleLinkedNode(key, value);
+			setHead(newNode);
+			map.put(key, newNode);
+			this.len++;
 		} else {
-			map.put(key, value);
-			list.remove(list.size()-1);
-			list.add(0,key);
+			DoubleLinkedNode newNode = new DoubleLinkedNode(key, value);
+			map.remove(this.end.key);
+			removeEnd();
+			setHead(newNode);
+			map.put(key, newNode);
 		}
 
+	}
+	
+	void setHead(DoubleLinkedNode node){
+		node.next = this.head;
+		node.pre = null;
+		
+		if (this.head!=null){
+			this.head.pre = node;
+		}
+		this.head = node;
+		
+		if (this.end == null){
+			this.end = node;
+		}
+	}
+	
+	void removeNode(DoubleLinkedNode node){
+		DoubleLinkedNode pre = node.pre;
+		DoubleLinkedNode post = node.next;
+		
+		// set pre.next = post
+		if (pre == null){
+			this.head = post;
+		} else {
+			pre.next = post;
+		}
+		
+		// set post.pre = pre
+		if (post == null){
+			this.end = pre;
+		} else {
+			post.pre = pre;
+		}
+	}
+	
+	void removeEnd(){
+		this.end = this.end.pre;
+		if (this.end != null){
+			this.end.next = null;
+		}
+	}
+	
+	class DoubleLinkedNode{
+		int key;
+		int value;
+		DoubleLinkedNode pre;
+		DoubleLinkedNode next;
+		DoubleLinkedNode(int key, int value){
+			this.key = key;
+			this.value = value;
+		}
 	}
 }
