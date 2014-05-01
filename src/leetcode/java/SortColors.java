@@ -1,24 +1,26 @@
 package leetcode.java;
 
-/*
- * Given an array with n objects colored red, white or blue, sort them so that objects of the same color 
- * are adjacent, with the colors in the order red, white and blue.
-
- Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.
-
- Note:
- You are not suppose to use the library's sort function for this problem.
+/**
+ * Given an array with n objects colored red, white or blue, sort them so that
+ * objects of the same color are adjacent, with the colors in the order red,
+ * white and blue.
+ * 
+ * Here, we will use the integers 0, 1, and 2 to represent the color red, white,
+ * and blue respectively.
+ * 
+ * Note: You are not suppose to use the library's sort function for this
+ * problem.
  */
 public class SortColors {
-/*
- * Timeout happened when {switch case} was used.
- */
+	/*
+	 * Timeout happened when {switch case} was used.
+	 */
 	public static void main(String[] args) {
 		int[] A = new int[] { 1, 0, 2, 1, 0, 2, 2, 0, 1, 1 };
 		Solution075_2 solution = new Solution075_2();
 		solution.sortColors(A);
 		for (int i = 0; i < A.length; i++) {
-			System.out.print(A[i]+" ");
+			System.out.print(A[i] + " ");
 		}
 	}
 }
