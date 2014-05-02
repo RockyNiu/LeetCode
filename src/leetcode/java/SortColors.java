@@ -43,7 +43,6 @@ class Solution075_2 {
 				twos--;
 				swap(A, index, twos);
 			}
-
 		}
 	}
 

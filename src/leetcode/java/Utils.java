@@ -7,25 +7,41 @@ import java.util.Scanner;
 
 public class Utils {
 
-	// generate random int[] 1-n with input size n
+	/**
+	 * generate random int[] 1-n with input size n
+	 * @param n, a int, the number of different numbers (0,1,2..n)
+	 * @return int[], with random 0,1,2,3...,num
+	 */
 	public static int[] generateRandoms(int n){
-		int[] result = new int[n];
-		for (int i = 0; i < result.length; i++) {
-			result[i] = i+1;
-		}
-		Random r = new Random();
-		for (int i = 0; i < n; i++) {
-			int index1 = Math.abs(r.nextInt()) % n;
-			int index2 = Math.abs(r.nextInt()) % n;
-			if (index1 != index2){
-				int temp = result[index1];
-				result[index1] = result[index2];
-				result[index2] = temp;
-			}
-		}
-		return result;
+		return generateRandomMatrix(1, n);
 	}
 
+	/**
+	 * generate random int[] matrix
+	 * @param n, a int, the repeated times
+	 * @param num, a int, the number of numbers (0,1,2,3,... ,num)
+	 * @return int[], with random 0,1,2,3...,num, each number repeated n times.
+	 */
+	public static int[] generateRandomMatrix(int n, int num){
+		int[] A = new int[n*num];
+		for (int i = 0; i < num; i++) {
+			for (int j = 0; j < n; j++) {
+				A[j+i*n] = i;
+			}
+		}
+		Random r = new Random();
+		for (int i = 0; i < A.length; i++) {
+			int index1 = Math.abs(r.nextInt()) % A.length;
+			int index2 = Math.abs(r.nextInt()) % A.length;
+			if (index1 != index2){
+				int temp = A[index1];
+				A[index1] = A[index2];
+				A[index2] = temp;
+			}
+		}
+		return A;
+	}
+	
 	public static ArrayList<Integer> readSystemInToIntArrayList() {
 		ArrayList<Integer> array = new ArrayList<Integer>();
 

@@ -1,6 +1,7 @@
 # LeetCode
 
 ## practice in java
+Notes: Some Convenient methods in [Utils](/src/leetcode/java/Utils.java)<br/> 
 
 [PalindromeNumber](/src/leetcode/java/PalindromeNumber.java)<br/>
 [AddTwoNumbers](/src/leetcode/java/AddTwoNumbers.java)<br/>
@@ -74,6 +75,7 @@
 [EvaluateReversePolishNotation](/src/leetcode/java/EvaluateReversePolishNotation.java)<br/>
 [Candy](/src/leetcode/java/Candy.java)<br/>
 [LRUCache](/src/leetcode/java/LRUCache.java)<br/>
+[SortColors_2](/src/leetcode/java/SortColors_2.java)<br/>
 
 ## License and Author
 * Author::[RockyNiu](https://github.com/RockyNiu)
