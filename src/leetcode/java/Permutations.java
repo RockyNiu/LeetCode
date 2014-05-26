@@ -2,6 +2,7 @@ package leetcode.java;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /*
  * Given a collection of numbers, return all possible permutations.
@@ -15,10 +16,10 @@ public class Permutations {
 	public static void main(String[] args) {
 		int[] num = new int[] { 1, 2, 3 };
 		Solution045_2 solution = new Solution045_2();
-		ArrayList<ArrayList<Integer>> permutation = solution.permute(num);
+		List<List<Integer>> permutation = solution.permute(num);
 		for (int i = 0; i < permutation.size(); i++) {
 			System.out.print('[');
-			ArrayList<Integer> p = permutation.get(i);
+			List<Integer> p = permutation.get(i);
 			for (int j = 0; j < p.size(); j++) {
 				if (j == p.size() - 1)
 					System.out.println(p.get(j).toString() + ']');
@@ -33,14 +34,14 @@ public class Permutations {
 
 // Albert Chen's solution
 class Solution045_2 {
-	public ArrayList<ArrayList<Integer>> permute(int[] num) {
-		ArrayList<ArrayList<Integer>> permutations = new ArrayList<ArrayList<Integer>>();
+	public List<List<Integer>> permute(int[] num) {
+		List<List<Integer>> permutations = new ArrayList<List<Integer>>();
 		if (num.length == 0)
 			return permutations;
 
 		Arrays.sort(num);
 		do {
-			ArrayList<Integer> unit = getList(num);
+			List<Integer> unit = getList(num);
 			permutations.add(unit);
 		} while (nextPermutation(num));
 
@@ -63,7 +64,7 @@ class Solution045_2 {
 		return false;
 	}
 
-	ArrayList<Integer> getList(int[] num) {
+	List<Integer> getList(int[] num) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		for (int i = 0; i < num.length; i++)
 			list.add(num[i]);
