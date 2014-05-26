@@ -9,13 +9,13 @@ public class Candy {
 	 * You are giving candies to these children subjected to the following
 	 * requirements:
 	 * 
-	 * 1) Each child must have at least one candy. 
-	 * 2) Children with a higher rating get more candies than their neighbors.
+	 * 1) Each child must have at least one candy. 2) Children with a higher
+	 * rating get more candies than their neighbors.
 	 * 
 	 * What is the minimum candies you must give?
 	 */
 	public static void main(String[] args) {
-		int[] ratings = new int[] {1,0,2, 3};
+		int[] ratings = new int[] { 1, 0, 2, 3 };
 		Solution135 solution = new Solution135();
 		System.out.println(solution.candy(ratings));
 	}
@@ -29,34 +29,28 @@ class Solution135 {
 		int len = ratings.length;
 		if (len == 0 || len == 1)
 			return len;
-		
+
 		int[] dp = new int[len];
-		
-		// increasing
-		int k = 1;
-		for (int i = 0; i < len; i++) {
-			if (i > 0 && ratings[i] > ratings[i-1]){
-				dp[i] = Math.max(k++, dp[i]);
-			}else {
-				k = 1;
+
+		// left -> right
+		for (int i = 1; i < len; i++) {
+			if (ratings[i] > ratings[i - 1]) {
+				dp[i] = dp[i - 1] + 1;
 			}
 		}
-		
-		// decreasing
-		k = 1;
-		for (int i = len - 1; i >=0; i--) {
-			if (i < len - 1 && ratings[i] > ratings[i+1]){
-				dp[i] = Math.max(k++, dp[i]);
-			}else {
-				k = 1;
+
+		// right -> left
+		for (int i = len - 2; i >= 0; i--) {
+			if (ratings[i] > ratings[i + 1] && dp[i] < dp[i + 1] + 1) {
+				dp[i] = dp[i + 1] + 1;
 			}
 		}
-		
+
 		int result = len;
 		for (int i = 0; i < dp.length; i++) {
 			result += dp[i];
 		}
-		
+
 		return result;
 	}
 

@@ -1,13 +1,13 @@
 package leetcode.java;
 
-/*
+/**
  * Divide two integers without using multiplication, division and mod operator.
  */
 public class DivideTwoIntegers {
 
 	public static void main(String[] args) {
-		int a = 1;
-		int b = -2147483648;
+		int a = 3;
+		int b = 2;
 		Solution028 solution = new Solution028();
 		System.out.println("max:" + Integer.MAX_VALUE);
 		System.out.println("min:" + Integer.MIN_VALUE);
@@ -22,9 +22,6 @@ class Solution028 {
 		int flag = (dividend ^ divisor) >> 31;
 
 		int div = 0;
-		if (a == 0)
-			return 0;
-
 		while (a >= b) {
 			long c = b;
 			for (int i = 0; a >= c; i++, c <<= 1) {
