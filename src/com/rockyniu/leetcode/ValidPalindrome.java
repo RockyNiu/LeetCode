@@ -16,24 +16,32 @@ public class ValidPalindrome {
 	 * palindrome.
 	 */
 	public static void main(String[] args) {
-		String S = "A man, a plan, a canal: Panama";
+		String str = "A man, a plan, a canal: Panama";
 		Solution125 solution = new Solution125();
-		System.out.println(solution.isPalindrome(S));
+		System.out.println(solution.isPalindrome(str));
+
+		str = "race a car";
+		System.out.println(solution.isPalindrome(str));
 	}
 
 }
 
-class Solution125{
+/**
+ * O(n) runtime, O(1) space
+ * @author RockyNiu
+ *
+ */
+class Solution125 {
 	public boolean isPalindrome(String s) {
 		int left = 0;
 		int right = s.length() - 1;
 		while (left < right) {
-			while (left < right && !Character.isLetterOrDigit(s.charAt(left))){
+			while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
 				left++;
-			};
-			while (left < right && !Character.isLetterOrDigit(s.charAt(right))){
+			}
+			while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
 				right--;
-			};
+			}
 			if (Character.toLowerCase(s.charAt(left)) != Character
 					.toLowerCase(s.charAt(right))) {
 				return false;
@@ -42,5 +50,5 @@ class Solution125{
 			right--;
 		}
 		return true;
-    }
+	}
 }

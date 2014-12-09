@@ -1,5 +1,10 @@
-package com.rockyniu.leetcode;
+package com.rockyniu.leetcode.util;
 
+/**
+ * 
+ * @author RockyNiu
+ *
+ */
 public class test {
 
 	/**
